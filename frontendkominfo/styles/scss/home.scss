@@ -1,0 +1,434 @@
+@import "../bootstrap/scss/bootstrap.scss";
+
+.form-search-beranda{
+	.form-group{
+		position: relative;
+	}
+	.search-page-beranda{
+	  width: 43px;
+	  right: 0;
+	  position:absolute;
+	  top:0;
+	}
+}
+.card-layanan{
+	.arrow-kunjungi{
+		width: 10px;
+	}
+}
+.bantuan{
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px; 
+	.dots{
+		width:10px;
+	}
+}
+.slider-top{
+	.carousel-indicators{
+	  position: absolute;
+	  left: 0;
+	  top: auto;
+	}
+	.carousel-indicators button{
+	  border-radius: 50%;
+	}
+	.carousel-indicators [data-bs-target]{
+	  background: $primary;
+	  margin: 0 3px;
+	  border: 0;
+	  transition: .5s;
+	}
+	.carousel-control-next{
+	  right: 5px;
+	  width: 8%;
+	}
+	.carousel-control-prev-icon, .carousel-control-next-icon{
+	  position: absolute;
+	  width: 100%;
+	}
+	.carousel-control-prev{
+	  left: 5px;
+	  width: 8%;
+	}
+}
+.banner{
+  height: 80vh;
+}
+.banner img{
+  vertical-align: bottom;
+  height: 100%;
+  border-radius: 20px;
+}
+.cards-kategori{	
+	.cards-wrapper{
+  		display: flex;
+		
+		.link-wrappers{
+		  border-radius: 15px;
+		  color: $primary
+		}
+		.link-wrappers:hover{
+			background-color: $info;
+			color: #000
+		}
+	}
+	.carousel-control-prev-1{
+	  position: absolute;
+	  left: 0;
+	  top: 25%;
+	  width: 5vh;
+	  height: 5vh;
+	  border-radius: 50%;
+	  border: 1px solid $primary;
+	  transform: translateX(-50%);
+	  z-index: 1;
+	  background-color: #fff;
+	  transition: .5s;
+	}
+	.carousel-control-prev-1:hover{
+	  opacity: 50%;
+	  transition: .5s;
+	}
+	.carousel-control-next-1{
+	  position: absolute;
+	  right: 0;
+	  top: 25%;
+	  width: 5vh;
+	  height: 5vh;
+	  border-radius: 50%;
+	  border: 1px solid $primary;
+	  transform: translateX(50%);
+	  z-index: 1;
+	  background-color: #fff;
+	  transition: .5s;
+	}
+	.carousel-control-next-1:hover{
+	  opacity: 50%;
+	  transition: .5s;
+	}
+}
+.cards-scroll{
+	white-space: nowrap;
+	display: flex;
+
+	.link-card-scroll{
+	  border-radius: 15px;
+	  background: $light;
+	}
+	.link-card-scroll:hover{
+	  background: $info;
+	  color: $primary;
+	}
+}
+@media screen and (max-width: 350px){
+
+	.slider-top{
+	    .carousel-caption{
+	      top: 0;
+	      left: 10%;
+	      color: black;
+	      text-align: left;
+	      width: 50%;
+	      
+	      h1{
+	        font-size: 16px;
+	      }
+	      p{
+	        font-size: 6px;
+	      }
+	      img{
+	        width: 10%;
+	      }
+	      .button-laman-kominfo{
+	        font-size: 6px;
+	        position: absolute;
+	        bottom: 0;
+	      }
+	    }
+	    .button-laman-kominfo {
+	      img{
+	      margin-bottom:0.9px
+	      }
+	    }
+  	}
+}
+@media screen and (min-width: 350px) and (max-width: 576px){
+	
+	.slider-top{
+	    .carousel-caption{
+	      top: 0;
+	      left: 10%;
+	      color: black;
+	      text-align: left;
+	      width: 50%;
+	      h1{
+	        font-size: 17px;
+	      }
+	      p{
+	        font-size: 7px;
+	      }
+	      img{
+	        width: 10%;
+	      }
+	      .button-laman-kominfo{
+	        font-size: 6px;
+	        position: absolute;
+	        bottom: 0;
+	      }
+	    }
+	    .button-laman-kominfo {
+	      img{
+	      margin-bottom:0.9px
+	      }
+	    }
+	  }
+}
+
+@media screen and (max-width: 576px){
+	.responsive-hidden, .cards-kategori{
+		display: none;
+	}
+	.form-search-beranda{
+		.title-search{
+			text-align: center;
+		}
+		.search-page-beranda{
+		  width: 28px;
+		  top: 16%;
+		}
+	}
+	.banner{
+	    height: 40vh;
+	  }
+	.card-layanan{
+		h4{
+			font-size: 100%;
+		}
+		.text-layanan{
+			font-size: 80%;
+		}
+		h5{
+			font-size: 90%;
+		}
+		p{
+			font-size: 10px;
+			line-height: 15px;
+		}
+		.link-kunjungi-pelayanan{
+			background-color: $secondary;
+		}
+		.detail-pelayanan{
+			text-align:center
+		}
+		.title-layanan-pemerintah{
+			display: none;
+		}
+	}
+	.bantuan{
+		background-image: url('/home/bg-bantuan-responsive.png');
+	}
+	.slider-top{
+		.carousel-indicators{
+		  bottom: -30px;
+		}
+		.carousel-indicators [data-bs-target]{
+		  width: 6px;
+		  height: 6px;
+		}
+	}
+}
+
+@media screen and (max-width: 992px) and (min-width: 576px){
+ 	.responsive-hidden, .cards-kategori{
+		display: none;
+	} 	
+  	.bantuan{
+  		.image-bantuan{
+  			height: 400px;
+  		}
+  	}
+  	.form-search-beranda{
+		.search-page-beranda{
+			top: 13%;
+		}
+	}
+	.card-layanan{
+		.link-kunjungi-pelayanan{
+			background-color: $secondary;
+		}
+		.detail-pelayanan{
+			text-align:center
+		}
+		.title-layanan-pemerintah{
+			display: none;
+		}
+	}
+	.bantuan{
+		background-image: url('/home/bg-bantuan.png');
+	}
+	.banner{
+	    height: 60vh;
+	  }
+	.slider-top{
+		.carousel-indicators{
+			bottom: -40px;
+		}
+		.carousel-indicators [data-bs-target]{
+			width: 8px;
+		  	height: 8px;
+		}
+		.carousel-caption{
+			top: 5%;
+			left: 10%;
+			color: black;
+			text-align: left;
+			width: 50%;
+		    
+		    .button-laman-kominfo{
+		        position: absolute;
+		        bottom: 0%;
+		        font-size: 11px;
+		    }
+			    h1{
+			        font-size: 30px;
+			    }
+			    p{
+			        font-size: 12px;
+			    }
+			    img{
+			        width: 15%;
+			    }
+		    
+		}
+		  
+	}
+}
+@media screen and (min-width: 992px){
+	.form-search-beranda{
+		h4{
+			font-size: 200%;
+		}
+	}
+	.card-layanan{
+		.link-kunjungi-pelayanan{
+			background-color: $primary;
+		}
+	}
+	.bantuan{
+		background-image: url('/home/bg-bantuan.png');
+	}
+}
+@media screen and (max-width: 1200px) and (min-width: 991px){
+	.bantuan{
+		.image-bantuan{
+			height: 400px;
+		}
+	}
+	.form-search-beranda{
+		.search-page-beranda{
+		 	top: 13%;
+		}
+	}
+	.slider-top{
+		.carousel-indicators{
+		  bottom: -40px;
+		}
+		.carousel-indicators [data-bs-target]{
+		  width: 8px;
+		  height: 8px;
+		}
+		.carousel-caption{
+	      top:50px;
+	      left: 10%;
+	      color: black;
+	      text-align: left;
+	      width: 50%;
+	    
+	      .button-laman-kominfo{
+	        position: absolute;
+	        bottom: 50px;
+	        font-size: 18px;
+	        width: 45%;
+
+	      }
+	      h1{
+	        font-size: 40px;
+	      }
+	      p{
+	        font-size: 18px;
+	      }
+	      img{
+	        width: 10%;
+	      }
+	    }
+	}
+}
+@media screen and (min-width: 1199px){
+	.bantuan{
+		.image-bantuan{
+			height: 400px;
+		}
+	}
+	.form-search-beranda{
+		.search-page-beranda{
+		 	top: 13%;
+		}
+	}
+	.slider-top{
+		.carousel-indicators{
+		  bottom: -40px;
+		}
+		.carousel-indicators [data-bs-target]{
+		  width: 10px;
+		  height: 10px;
+		}
+		.carousel-caption{
+			top: 5%;
+			left: 10%;
+			color: black;
+			text-align: left;
+			width: 37.5%;
+
+			.button-laman-kominfo{
+			  position: absolute;
+			  bottom: 5%;
+			}
+
+		}
+		img{
+			width:10%
+		}
+	}
+}
+
+.laycard{
+  min-height: 415.5px;
+}
+.laycard-2{
+  min-height: 350px;
+}
+@media screen and (max-width: 576px){
+  .laycard{
+    min-height: 320px;
+  }
+  .laycard-2{
+	  min-height: 300px;
+	}
+}
+.carilayanan{
+  position: relative;
+}
+.carilayanan .icon-icon{
+  position: absolute;
+  width: 20px;
+  top: 0;
+  left: 0;
+  transform: translate(10px,50%);
+  color: grey;
+}
+.jenislayanan .icon-icon{
+  width: 50px;
+  cursor: pointer;
+}

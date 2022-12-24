@@ -1,0 +1,57 @@
+.count-permohonan{
+  .icon-icon{
+    width: 40px;
+    margin-bottom: 0;
+    height: 40px;
+  }
+  .content-permohonan-dash{
+    margin: 0;
+  }
+  h5{
+    margin: 0;
+  }
+  p{
+    margin: 0;
+  }
+}
+.icon-dashboard{
+  height: 26px;
+  width: 26px;
+}
+.detailtiket{
+  font-size: 14px;
+}
+
+.table-dashboard,
+.table-dashboarddetail{
+  white-space: nowrap;
+  overflow: auto;
+}
+.table-dashboarddetail table th{
+  background-color: rgb(228, 231, 233);
+  padding: 20px 7.5px;
+  width: 25%;
+}
+.table-dashboarddetail table td{
+  padding: 20px 7.5px;
+  background-color: white;
+  width: 25%;
+}
+.searchdash{
+  width: 20px;
+
+}
+
+.formdash{
+  position: relative;
+}
+
+.faquser{
+  height: 89vh;
+  border-radius: 0;
+}
+@media screen and (max-width: 576px){
+  .responsivetitle{
+    display: none;
+  }
+}

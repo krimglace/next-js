@@ -1,0 +1,490 @@
+@import "../../bootstrap/scss/bootstrap.scss";
+
+.user .menu-topbar{
+  height: 34px;
+  margin-right: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.user .menu-topbar.icon{
+  width: 34px
+}
+.user .menu-topbar:hover{
+  background:  #D3DFFD;
+}
+.user .profil-menu{
+  border-radius: 10px;
+}
+.user #dd-profil .profil-info strong{
+  font-size: 12px;
+}
+.user #dd-profil .profil-info .email-info{
+  font-size: 10px;
+  margin-top: -5px;
+}
+.user #dd-profil .garis-clear{
+  margin-bottom: -15px;
+}
+.user #dd-profil ul li{
+  display: block;
+}
+.user #dd-profil .info-menu{
+  font-size: 13px;
+  margin-top: -15px;
+  margin-left: -30px;
+}
+.user #dd-profil .info-menu-logout{
+  font-size: 13px;
+  margin-top: -15px;
+  text-align: left;
+}
+.user #dd-profil .link-menu-profil{
+  border-radius: 5px;
+}
+.user #dd-profil .link-menu-profil:hover{
+  background-color: rgb(42, 42, 60);
+  color: white;
+}
+.user .icon-topbar{
+  width: 18px;
+}
+.user .icon-pemohon{
+  display: flex;
+  width: 260px;
+}
+.user .icon-pemohon p{
+  margin-top: -5px;
+  font-size: 12px;
+}
+.user .topbar{
+  background-color: rgb(30, 30, 45);
+}
+.user #menu-header{
+  height: 70px;
+}
+
+.user #dd-change{
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  border-radius: 10px;
+  background-color: rgb(33, 46, 72);
+  transition: .3s;
+  animation: dartIn .6s 1;
+}
+.user #dd-profil{
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  border-radius: 10px;
+  background-color: rgb(33, 46, 72);
+  transition: .3s;
+  animation: dartIn .6s 1;
+}
+
+.user .menu-topbar-dropdown{
+  font-size: 12px;
+  color: white;
+  border: 0;
+}
+.menu-topbar-dropdown:hover{
+  background-color:  #D3DFFD;
+}
+#menu-topbar{
+  transform: translate(0%, 50%);
+}
+.menu-left{
+  position: absolute;
+}
+.icon-pemohon.open, .icon-pemohon.close{
+  animation: sideOut .5s 1;
+  width: 260px;
+}
+.name-pemohon{
+  display: block
+}
+
+.sidebar{
+  width: 260px;
+  height: 100vh;
+  position: fixed;
+}
+.sidebar .icon-menu-sidebar{
+  width: 20px;
+}
+.sidebar .text-sidebar.not-sidebar{
+  position: absolute;
+  width: 177px;
+  text-align: left;
+  margin-top: 4px;
+  font-size: 14px;
+  left: 50px;
+}
+.sidebar .text-sidebar.this-sidebar{
+  position: absolute;
+  left: 50px;
+  width: 147px;
+  text-align: left;
+  margin-top: 4px;
+  font-size: 14px;
+}
+.sidebar .icon-sidebar{
+  width: 35px;
+}
+.sidebar .icon-menu-dropdown{
+  position: absolute;
+  left: 230px;
+}
+.sidebar .icon-menu-dropdown .icon-menu-sidebar{
+  width: 13px;
+}
+.sidebar .list-menu-sidebar:hover,
+.sidebar .list-menu-sidebar.active{
+  border-left: 5px solid $primary;
+  border-top: 1px solid $primary;
+  border-right: 1px solid $primary;
+  border-bottom: 1px solid $primary;
+  color: $primary
+}
+.list-menu-sidebar{
+  width: 100%;
+  height: 40px;
+}
+
+.sidebar.close, .sidebar.open{
+  animation: sideOut .5s 1;
+  width: 260px;
+}
+.sidebar .text-sidebar{
+  display: block
+}
+.dropdown-menu-sidebar .icon-menu-sidebar{
+  width: 10px;
+}
+.dropdown-menu-sidebar .text-sidebar{
+  position: absolute;
+  width: 177px;
+  text-align: left;
+  margin-top: 4px;
+  font-size: 13px;
+  left: 70px;
+}
+.nonactive-dropdown{
+  transform: rotate(0);
+  animation: dropdownRotate0 .3s 1;
+}
+.active-dropdown{
+  transform: rotate(180deg);
+  animation: dropdownRotate .3s 1;
+}
+
+#ddpermohonan{
+  animation: zerotofull .3s 1;
+  height: 146px;
+}
+#ddhelp{
+  animation: zerotofull2 .3s 1;
+  height: 96px;
+}
+
+#footer-user{
+  position: fixed;
+  bottom: 0;
+  font-size: 90%;
+  font-weight: bold;
+}
+#footer-user.close, #footer-user.open{
+  animation: contOut .5s 1;
+  margin-left: 260px;
+}
+
+.content{
+  min-height: 90vh;
+}
+.content.close, .content.open{
+  animation: contOut .5s 1;
+  margin-top: 70px;
+  margin-left: 260px;
+}
+.sidebar{
+  z-index: 1;
+}
+.sidebar small{
+  font-size: 13px;
+}
+
+#icon-toggle{
+  animation: rotateOutToggle .5s 1;
+}
+#icon-toggle.side{
+  transform: rotate(180deg);
+  animation: rotateToggle .5s 1;
+}
+.sidebar .icon-menu-dropdown{
+  display:block
+}
+@keyframes rotateToggle{
+  from{
+    transform: rotate(0);
+  } to{
+    transform: rotate(-180deg);
+  }
+}
+@keyframes rotateOutToggle{
+  from{
+    transform: rotate(180deg);
+  } to{
+    transform: rotate(0);
+  }
+}
+@keyframes dartIn{
+  0%{
+    transform: translateY(-10px);
+  }
+  10%{
+    transform: translateY(-9px);
+  }
+  20%{
+    transform: translateY(-8px);
+  }
+  30%{
+    transform: translateY(-7px);
+  }
+  40%{
+    transform: translateY(-6px);
+  }
+  50%{
+    transform: translateY(-5px);
+  }
+  60%{
+    transform: translateY(-4px);
+  }
+  70%{
+    transform: translateY(-3px);
+  }
+  80%{
+    transform: translateY(-2px);
+  }
+  90%{
+    transform: translateY(-1px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+@keyframes dartOut{
+  0%{
+    transform: translateY(0px);
+  }
+  10%{
+    transform: translateY(-1px);
+  }
+  20%{
+    transform: translateY(-2px);
+  }
+  30%{
+    transform: translateY(-3px);
+  }
+  40%{
+    transform: translateY(-4px);
+  }
+  50%{
+    transform: translateY(-5px);
+  }
+  60%{
+    transform: translateY(-6px);
+  }
+  70%{
+    transform: translateY(-7px);
+  }
+  80%{
+    transform: translateY(-8px);
+  }
+  90%{
+    transform: translateY(-9px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+@keyframes contIn{
+  from{
+    margin-left: 260px;
+  } to {
+    margin-left: 70px;
+  }
+}
+@keyframes contOut{
+  from{
+    margin-left: 70px;
+  } to {
+    margin-left: 260px;
+  }
+}
+@keyframes zerotofull{
+  from{
+    height: 0;
+  } to{
+    height: 146px;
+  }
+}
+@keyframes zerotofull2{
+  from{
+    height: 0;
+  } to{
+    height: 96px;
+  }
+}
+@keyframes dropdownRotate0{
+  from{
+    transform: rotate(-180deg);
+  } to{
+    transform: rotate(0deg);
+  }
+}
+@keyframes dropdownRotate{
+  from{
+    transform: rotate(0deg);
+  } to{
+    transform: rotate(180deg);
+  }
+}
+@keyframes buttonIn{
+  from{
+    margin-bottom: 0;
+  }to{
+    margin-bottom: -100px;
+  }
+}
+@keyframes nameOut{
+  from{
+    transform: translateX(0);
+  } to {
+    transform: translateX(-250px);
+  }
+}
+@keyframes sideIn{
+  from{
+    width: 260px;
+  } to {
+    width: 0px;
+    transform: translateX(-300px);
+  }
+}
+@keyframes sideOut{
+  from{
+    transform: translateX(-300px);
+    width: 0px;
+  } to {
+    width: 260px;
+  }
+}
+@media screen and (max-width: 576px){
+  #footer-user{
+    position: fixed;
+    bottom: 0;
+    font-size: 75%;
+    font-weight: bold;
+    text-align: center;
+  }
+  #footer-user.close{
+    animation: none;
+    margin-left: 0px;
+  }
+  #footer-user.open{
+    animation: none;
+    margin-left: 0px;
+  }
+  .icon-pemohon.close{
+    animation: sideOut .5s 1;
+    width: 260px;
+  }
+  .icon-pemohon.open{
+    animation: sideIn .5s 1;
+    transform: translateX(-300px);
+    width: 0;
+  }
+  .name-pemohon.open{
+    display: none;
+  }
+  .name-pemohon{
+    display: block;
+  }
+  .sidebar.open{
+    animation: sideIn .5s 1;
+    width: 0px;
+    transform: translateX(-300px)
+  }
+  .sidebar.close{
+    animation: sideOut .5s 1;
+    width: 260px;
+  }
+  .sidebar .text-sidebar.open{
+    display: none
+  }
+  .sidebar .text-sidebar{
+    display: block
+  }
+  .sidebar .icon-menu-dropdown.open{
+    display:none
+  }
+  .sidebar .icon-menu-dropdown{
+    display: block
+  }
+  .content.close{
+    margin-top: 70px;
+    margin-left: 0px;
+    animation: none;
+  }
+  .content.open{
+    animation: none;
+     margin-top: 70px;
+    margin-left: 0px;
+  }
+  #icon-toggle{
+    transform: rotate(180deg);
+    animation: rotateToggle .5s 1;
+  }
+  #icon-toggle.side{
+    transform: rotate(0);
+    animation: rotateOutToggle .5s 1;
+  }
+}
+
+#menu-profil{
+  padding-bottom: 30px;
+}
+
+#image-pemohon{
+  display: block;
+  height: 110px;
+  width:  90px;
+}
+.text-side-link{
+  display: block;
+}
+@media screen and (max-width: 576px){
+  #image-pemohon.hilangkan{
+    display: none;
+  }
+  .text-side-link.hilangkan{
+    display: block;
+  }
+  .text-side-link{
+    display: none;
+  }
+  #image-pemohon{
+    display: block;
+    height: 70px;
+    width:  100px;
+  }
+}
+
+.icon-menu-sidebar{
+  margin-top: 6px;
+}
+
+#footer-user{
+  z-index: 100;
+}

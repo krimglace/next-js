@@ -1,0 +1,68 @@
+.layanan-sementara{
+	background: linear-gradient(180deg, rgba(1, 102, 254, 0.52) 100%, #1474AE 100%), url(/bg_tentang_kami.png);
+	background-repeat: no-repeat;
+	height: 340px;
+}
+@media screen and (max-width: 767px){
+	.content-layanan-sementara{
+		margin-top: -300px;
+		margin-left: 5%;
+		margin-right: 5%;
+		padding: 5%;
+	}
+	.content-layanan-sementara h4{
+		font-size: 90%;
+	}
+	.content-layanan-sementara h6{
+		font-size: 80%;
+	}
+	.content-layanan-sementara input{
+		font-size: 80%;
+	}
+	.content-layanan-sementara select{
+		font-size: 80%;
+	}
+	.content-layanan-sementara p{
+		font-size: 70%;
+	}
+	.content-layanan-sementara small{
+		font-size: 80%;
+	}
+	.content-layanan-sementara table{
+		font-size: 80%;
+	}
+}
+@media screen and (min-width: 767px){
+	.content-layanan-sementara{
+		margin-top: -300px;
+		margin-left: 15%;
+		margin-right: 15%;
+		padding: 5%;
+	}
+	.content-layanan-sementara p{
+		font-size: 90%;
+	}
+	.content-layanan-sementara h6{
+		/*font-size: 90%;*/
+	}
+	.content-layanan-sementara table{
+		font-size: 90%;
+	}
+}
+.content-layanan-sementara .btn-captcha{
+	position: absolute;
+	top: 45%;
+	margin-left: 1%;
+	height: 50px;
+	width: 50px;
+	transform: translateY(-50%);
+}
+.content-layanan-sementara .cover-captcha{
+	position: relative;
+}
+.content-layanan-sementara ul li.ullistalphabet{
+	display: block;
+}
+.content-layanan-sementara ul li{
+	margin: 5px auto;
+}

@@ -1,0 +1,73 @@
+@import "../bootstrap/scss/bootstrap.scss";
+
+.menu-login-register:hover{
+	color: #000000;
+	border-bottom: 2px solid #000;
+}
+.left-login-register{
+	height: 100vh;
+}
+.right-login-register{
+	height: 100vh;
+
+	ul.cover-menu-login-register li{
+		display: inline-block;
+	}
+	.logo-login-register{
+		min-height: 80vh;
+	}
+}
+
+@media screen and (max-width: 576px){
+	.right-login-register{
+		display: none;
+	}
+	.form-login-register{
+		border: 1px solid $info;
+	}
+	.form-register{
+		label{
+			font-size:90%;
+		}
+		input{
+			font-size:90%;
+		}
+		small{
+			font-size:70%;
+		}
+	}
+}
+@media screen and (min-width: 576px){
+	.logo-responsive-login{
+		display: none;
+	}
+}
+
+.reload-button{
+  position: absolute;
+  left: 180px;
+  height: 50px;
+  width: 50px;
+}
+.image-capctha{
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  z-index: -1;
+}
+.captacha{
+  font-size: 150%;
+  font-family: 'Macondo Swash Caps', cursive;
+  text-decoration: line-through;
+}
+@media screen and (min-width: 567px){
+  .reload-button{
+    left: 220px;
+  }
+}
+@media screen and (min-width: 992px){
+  .reload-button{
+    left: 250px;
+
+  }
+}

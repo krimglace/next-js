@@ -1,0 +1,20 @@
+@import "../bootstrap/scss/bootstrap.scss";
+
+.tentang-cover{
+  background-image: url('/tentang/bg-tentang.png');
+  background-position: 50% 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 60vh;
+  border-radius: 50px;
+}
+.tentang-cover p{
+  font-size: 19px;
+  width: 80%;
+}
+@media screen and (max-width: 576px){
+  .tentang-cover p{
+    width: 100%;
+    font-size: 12px;
+  }
+}

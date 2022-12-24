@@ -1,0 +1,176 @@
+@import "../bootstrap/scss/bootstrap.scss";
+.menu-bar{
+  padding-bottom: 8px;
+  margin: 0 8px;
+  font-weight: 600;
+}
+.menu-bar:hover{
+  border-bottom: 3px solid $primary;
+}
+footer{
+  background-image: url('/footer.png');
+  background-size: 100% 100%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+
+  .icon-ikuti{
+    width: 20px;
+    color: $dark;
+  }
+  .footer-image{
+    height: 250px;
+  }
+}
+.register-redirect{
+  height: 100vh;
+}
+.card-register-redirect{
+  width: 80%;
+}
+.card-img-top-1{
+  width: 20%;
+}
+@media screen and (min-width: 576px){
+  .card-register-redirect{
+    width: 60%;
+  }
+}
+.box-load{
+  margin-top: 10px;
+}
+.box-load div{
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 6px;
+}
+.loading1{
+  background-color: $primary;
+  opacity: 50%;
+  animation: loading1 1s infinite;
+}
+.loading2{
+  background-color: $primary;
+  opacity: 50%;
+  animation: loading2 1s infinite;
+}
+.loading3{
+  background-color: $primary;
+  opacity: 50%;
+  animation: loading3 1s infinite;
+}
+@keyframes loading1{
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 100%;
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes loading2{
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.2);
+    opacity: 100%;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes loading3{
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 100%;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 576px){
+  footer{
+    .list-ikuti, .list-menu{
+      font-size:16px;
+    }
+    .icon-ikuti{
+      width: 10px;
+    }
+  }
+}
+@media screen and (max-width: 576px){
+  footer{
+    .list-ikuti, .list-menu{
+      font-size:14px;
+    }
+    .icon-ikuti{
+      width: 10px;
+    }
+    .footer-image{
+      height: auto;
+    }
+  }
+}
+
+
+.kategorifaq .icon{
+  width: 10px;
+}
+.sidefaq{
+  border-radius: 20px;
+}
+.qna{
+  border-radius: 20px;
+}
+.qnaanswer{
+  width: 50%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px){
+  .sidefaq{
+    display: none;
+  }
+  .questions{
+    font-size: 12px;
+  }
+  .answer{
+    font-size: 10px;
+  }
+}
+#notification{
+  position: absolute;
+  z-index: 100000000;
+  top: 60px;
+  right: 80px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  transition: .3s;
+  animation: dartIn .6s 1;
+}
+@media screen and (max-width: 576px){
+  #notification{
+    right: 45px;
+  }
+}
+.garis-batas{
+  margin: 0px;
+}
